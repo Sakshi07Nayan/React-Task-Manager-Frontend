@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     setError(''); // Clear previous error
     try {
-      const res = await axios.post('http://localhost:5000/api/users/login', { email, password });
+      const res = await axios.post('https://task-manager-server-client.onrender.com/api/users/login', { email, password });
       login(res.data.token);
     } catch (err) {
       if (err.response && err.response.data) {

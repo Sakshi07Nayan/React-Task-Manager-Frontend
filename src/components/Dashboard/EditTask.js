@@ -9,7 +9,7 @@ const EditTaskModal = ({ show, handleClose, task, onTaskUpdated }) => {
   const handleSave = async () => {
     const token = localStorage.getItem('token');
     try {
-      const res = await axios.put(`http://localhost:5000/api/tasks/${task._id}`, {
+      const res = await axios.put(`https://task-manager-server-client.onrender.com/api/tasks/${task._id}`, {
         title,
         description
       }, {

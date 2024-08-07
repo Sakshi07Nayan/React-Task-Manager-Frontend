@@ -19,7 +19,7 @@ const Register = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/users/register', { username, email, password });
+      const res = await axios.post('https://task-manager-server-client.onrender.com/api/users/register', { username, email, password });
       const { token, user } = res.data;
       localStorage.setItem('token', token);
       localStorage.setItem('username', user.username);

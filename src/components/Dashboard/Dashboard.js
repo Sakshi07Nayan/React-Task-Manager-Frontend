@@ -17,7 +17,7 @@ const Dashboard = () => {
     const fetchTasks = async () => {
       const token = localStorage.getItem('token');
       try {
-        const res = await axios.get('http://localhost:5000/api/tasks', {
+        const res = await axios.get('https://task-manager-server-client.onrender.com/api/tasks', {
           headers: { 'x-auth-token': token }
         });
         console.log('Fetched Tasks:', res.data);
@@ -51,7 +51,7 @@ const Dashboard = () => {
   const handleDeleteTask = async (id) => {
     const token = localStorage.getItem('token');
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`, {
+      await axios.delete(`https://task-manager-server-client.onrender.com/api/tasks/${id}`, {
         headers: { 'x-auth-token': token }
       });
       setTasks(tasks.filter(task => task._id !== id));
