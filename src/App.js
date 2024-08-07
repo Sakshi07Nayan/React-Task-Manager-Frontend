@@ -5,6 +5,8 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import Dashboard from './components/Dashboard/Dashboard';
 import Register from './components/Register';
 import Login from './components/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const ProtectedRoute = ({ element }) => {
   const { auth } = useAuth();
