@@ -1,0 +1,44 @@
+/* src/styles.css */
+.card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    margin-right: 0.5rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* src/styles.css */
+.navbar .navbar-text {
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+.navbar .btn-outline-danger {
+  margin-left: 20px;
+}
+
+.task-columns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.task-column {
+  width: 30%;
+}
+
+.task {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+}
